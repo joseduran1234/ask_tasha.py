@@ -1,0 +1,79 @@
+# config.yml
+
+# Partner's preferences (customize based on your partner's likes)
+partner_likes:
+  - Italian
+  - Sushi
+  - Craft Cocktails
+  - Live Music
+  - Outdoor Seating
+  - Middle-Eastern Food
+  - Thai Food
+  - Spanish Food
+  - Tapas
+
+# Things to avoid (customize based on dislikes or constraints)
+avoid:
+  - Crowded places
+  - Fast food
+  - Expensive restaurants
+
+# Prioritization rules
+priorities:
+  - Want to Go list first
+  - Romantic ambiance
+  - High ratings (4.5+ stars)
+
+# Additional preferences
+additional_preferences:
+  - Walking distance (under 1 mile)
+  - Quiet atmosphere
+  - Unique or hidden gems
+
+# Default city (optional)
+default_city: New York City
+
+# Radius for searching nearby places (in meters)
+search_radius: 5000  # 5 km
+
+# Number of recommendations to generate
+num_recommendations: 5
+
+# Google Places API key (get your own key)
+google_api_key: YOUR_API_KEY
+
+# Yelp API key (get your own key)
+yelp_api_key: YOUR_API_KEY
+ 
+ 
+ This configuration file uses the  YAML format, which is a human-readable data serialization format. Here's a brief overview of the key-value pairs in the configuration file: 
+ 
+ partner_likes : A list of the partner's food preferences. You can customize this list based on your partner's likes. 
+ avoid : A list of things to avoid, such as crowded places, fast food, or expensive restaurants. 
+ priorities : A list of prioritization rules, such as wanting to go to places on the "Want to Go" list first, preferring romantic ambiance, and choosing places with high ratings (4.5+ stars). 
+ additional_preferences : A list of additional preferences, such as walking distance, quiet atmosphere, or unique/hiddengems. 
+ default_city : The default city to use for recommendations (optional). 
+ search_radius : The radius for searching nearby places in meters (e.g., 5000 meters is approximately 5 km). 
+ num_recommendations : The number of recommendations to generate. 
+ google_api_key : Your Google Places API key (get your own key from the  Google Cloud Console). 
+ yelp_api_key : Your Yelp API key (get your own key from the  Yelp Developers website). 
+ 
+ Step 3: Generate Recommendations 
+ With the configuration file in place, you can now generate personalized restaurant recommendations for your partner. Run the following command in the terminal: 
+ python recommender.py
+ 
+ The script will read the configuration file, query the Google Places API and Yelp API to find nearby restaurants based on your partner's preferences, and generate a list of recommendations. The output will look something like this: 
+ Here are 5 restaurant recommendations for your partner:
+
+1. Restaurant: L'Artusi
+   Cuisine: Italian
+   Address: 228 W 10th St, New York, NY 10014, USA
+   Rating: 4.7
+   Price Level: $$$
+   Website: https://www.lartusi.com/
+
+2. Restaurant: Sushi Yasuda
+   Cuisine: Sushi
+   Address: 204 E 43rd St, New York, NY 10017, USA
+   Rating: 4.7
+   Price Level:
